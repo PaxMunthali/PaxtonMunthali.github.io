@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontAwesome/css/all.css">
+    <style>
+        body{
+            background-color: rgb(19, 21, 51);
+            font-size: 20px;
+            
+        }
+        .navbar-brand{            
+         
+            color: rgb(185, 196, 248);
+            padding-left: 30px;
+        }  
+        .navbar-nav{
+            margin-right: 50px;
+        }   
+        .nav-link{
+            /* color: rgb(4, 243, 76); */
+            color: rgb(185, 196, 248);
+        }   
+        .about-me{
+            /* color: rgb(4, 243, 76); */
+            color: rgb(185, 196, 248);            
+            margin-bottom: 80px;
+            
+
+        }    
+        .about-me p{
+            margin-top: 50px;
+            font-size: 20px;
+            
+            
+        }  
+        .about-me span{
+            color: cornsilk;
+            font-size: 30px;
+
+        }
+        .about-me #span2{
+            color:  cyan;
+            font-size: 20px;
+        }
+        .about-me a{
+            text-decoration: none;
+            color: cornsilk;
+            padding: 5px;
+            border: 1px solid cyan;
+
+            border-radius: 5%;
+        }
+        .about-me a:hover{
+            
+            background-color: cyan;
+            transition: 0.7s;
+        }
+        
+        
+        .myLinks ul{
+            list-style: none;
+            position: fixed;
+            
+
+        }          
+        
+        .myLinks ul li a{
+            color: cornsilk;            
+           
+        }    
+        .myLinks ul{
+            top: 80%; 
+        }   
+        .myLinks ul li a:hover{
+            color: cyan;
+        }
+       
+        .myLinks ul li{
+            /* margin-top: 20px; */
+            font-size: 25px;
+            
+        }
+        .experience{
+            /* color: cornsilk; */
+            color: rgb(185, 196, 248);
+            margin-bottom: 40px;
+            
+        }
+        .experience .ex-column{
+            border-left: 1px solid rgb(185, 196, 248);
+        }
+        .experience .ex-column button{            
+            background-color: #ddd;
+            border: none;
+            color: black;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        .about-me2{
+            color: rgb(185, 196, 248);
+            margin-bottom: 40px;
+        }
+        .about-me2 hr{
+            margin-bottom: 30px;
+        }
+        .about-me2 h5{
+            color: cornsilk;
+        }
+        .experience hr{
+            margin-bottom: 30px;
+        }
+
+        .experience h5{
+            color: cornsilk;
+            
+        }
+        .experience h6 span{
+            color: cyan;
+        }
+        .nav-item a.selectedclass
+        {
+            color: cyan;
+            /* background-color:blue; */
+        }
+        .nav-pills button .selectedClass2{
+            color: cyan;
+        }
+        .projects{
+            margin-bottom: 40px;
+        }
+        .projects h5{
+            color: cornsilk;
+        }
+
+        .projects .eachProject .col{
+            height: 300px;
+            /* width: 10px; */
+            margin: 10px;
+            background-color: rgb(27, 39, 70);
+        }
+
+        .projects .eachProject .col p{
+            color: rgb(185, 196, 248);
+            font-size: 17px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-2">
+        <div class="row">            
+                <nav class="navbar navbar-expand-sm navbar-dark  ">  
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Logo</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#about-me" class="nav-link">01. About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#experience" class="nav-link">02. Experience</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#projects" class="nav-link">03. My Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#"  class="nav-link">04. Contact</a>
+                                    </li>
+                                </ul>  
+                            </div>  
+                        </div>            
+                </nav>             
+        </div>
+
+        <!-- About me -->
+        <div class="row d-flex justify-content-center about-me mt-5">
+            <div class="col-6">
+                <p >Hie, <br>my name is <br> 
+                    <span>Paxton Munthali</span>, <br>
+                <span id="span2">a Computer Engineer</span> specialising in System Development 
+                    using C++, C#, PHP, and Javascript Languages, with Laravel and CodeIgnitor Frameworks.
+                    I am currently focused on developing software applications that locally improve daily human lives.</p>
+                    
+                    <a href="documents/Paxton Munthali CV.pdf" type="button"><i class="fas fa-download"></i> Download CV</a>
+            </div>
+        </div>
+        <!-- Links -->
+        <div class="row d-flex myLinks justify-content-center">
+            <div class="col left-links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/PaxMunthali"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/paxton-munthali-0bb282214" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:paxmunthalijnr@gmail.com"><i class="fab fa-google"></i></a>
+                    </li>  
+
+                </ul>
+                
+            </div>
+            <div class="col-1 right-links">
+                <ul>                    
+                    <li>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fas fa-arrow-up"></i></a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div class="row d-flex about-me2 justify-content-center" id="about-me">                
+            <div class="col-7">
+                <h5>ABOUT ME</h5>
+                <hr>
+                <p>Hello, My name is Paxton Munthali. I Love it that i am a Computer Engineer, 
+                    it is a dream come true. In the field, what makes me happy is System development. 
+                    Systems that deal with emerging technology. When it comes to software systems, am able to build 
+                    specifically Desktop, Web and Android applications mostly. This is where my primary interest lies.</p>
+
+                <p>However, My current Focus is on desktop and Web based applications. With the previledge of 
+                    working for Globe, I managed to gather some more interpersonal as well as software implementation skills </p>
+
+                <p>The Following are the Languages and Frameworks that i have been using Recently</p>
+                <div class="row">
+                    <div class="col-4 Languages">
+                        <ul>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>PHP</li>
+                            <li>Javascript</li>                                               
+                        </ul>
+                    </div>
+                    <div class="col-2 Frameworks">
+                        <ul>
+                            <li>Laravel</li>
+                            <li>CodeIgnitor</li>                                               
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Experience -->
+           <div class="row d-flex experience justify-content-center" id="experience">                
+                <div class="col-7">
+                    <h5>EXPERIENCE</h5>
+                    <hr>
+                    <div class="d-flex align-items-start ex-column">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Self</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">GCSL</button>
+                          <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">GIL</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">TNM PLC</button>
+
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <h6>Software Developer<span>@Self Employed</span></h6>
+                            <p>2017 - present</p>
+                            <ul>
+                                <li>Did system analysis, design and deployment of software Systems.</li>
+                                <li>Web application development</li>
+                                <li>desktop application development</li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <h6>Software Implementor <span>@Globe Computer Systems Limited</span></h6>
+                            <p>From July, 2021 - September, 2022</p>
+                            <ul>
+                                <li>Implemented Enterprise softwares like Payroll, Accounting <br>and Point of Sale on various Machines</li>
+                                <li>Trained users</li>
+                                <li>Provided support</li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                            <h6>Assistant Technician<span>@Globe Internet Limited</span></h6>
+                            <p>From November, 2019 - July, 2021</p>
+                            <ul>
+                                <li>Did cabling, Terminated Ethernet cable  and Splicing Fiber cable</li>
+                                <li>Configured Routers, Switches and access points</li>                            
+                                <li>Computer software and hardware maintenance</li>
+                                <li>Connected homes to internet</li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <h6>Network Engineer Intern<span>@TNM PLC</span></h6>
+                            <p>From May, 2017- July, 2017</p>
+                            <ul>
+                                <li>Installed of base station antennae</li>
+                                <li>Connected Homes and Offices to internet</li>
+                                <li>Did cabling, Terminated Ethernet cable</li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                        </div>
+                      </div>
+                </div>
+           </div>
+           <!-- Projects -->
+           <div class="row d-flex projects justify-content-center" id="projects">                
+                <div class="col-7">
+                    <h5>PROJECTS</h5>
+                        <div class="row eachProject">
+                            <div class="col">
+                                <h5>USB Detector App</h5>
+
+                                <P>This is an App that detects any usb connected to a 
+                                    pc and records every file transfer</P><br>
+
+                                <p>Used C# and Access DB for development</p>
+                            </div>
+                            <div class="col"><h5>EMAS System</h5>
+
+                                <P>This is a payroll and HR system that helps 
+                                    in employee management as well as Payroll Management</P><br>
+
+                                <p>Used PHP, Laravel, HTML, Javascript CSS, bootstrap and MySQL DB for development</p>
+                            </div>
+                            <div class="col"><h5>Real Estate Website</h5>
+
+                                <P>This is a website that helps people to easily search their desired homes</P><br>
+
+                                <p>Used PHP, HTML, Javascript CSS, bootstrap and MySQL DB for development</p>
+                            </div>                        
+                      </div>
+                      <div class="row eachProject">
+                        <div class="col">
+                            <h5>EMAS System</h5>
+
+                                <P>This is a payroll and HR system that helps 
+                                    in employee management as well as Payroll Management</P><br>
+
+                                <p>Used PHP, Laravel, HTML, Javascript CSS, bootstrap and MySQL DB for development</p>
+                            
+                        </div>
+                        <div class="col">
+                            <h5>Online Shop</h5>
+
+                                <P>This is a system that is used to advertise and sell various Items</P><br>
+
+                                <p>Used PHP, CodeIgnitor, HTML, Javascript CSS, bootstrap and MySQL DB for development</p>
+                            
+                        </div>
+                        <div class="col">
+                            <h5>Sign Language Recognition System</h5>
+
+                                <P>This is a system that translates sign to text/voice and text/voice to sign. </P><br>
+
+                                <p>Used C# and Kinect v2 sensors for development</p>
+                            
+                        </div>                        
+                  </div>
+                    
+                </div>
+            </div>
+
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <!-- Menu item selection -->
+   <script>  
+        $(function(){
+            // $('.nav-item a').click(function(){
+            //     $('.nav-item a').each(function(a){
+            //     $( this ).removeClass('selectedclass')
+            //     });
+            //     $( this ).addClass('selectedclass');
+            // });
+            
+            $('.navbar-nav a').click(function(){
+                $('.navbar-nav a').each(function(a){
+                    $( this ).removeClass('selectedclass')
+                });
+                $( this ).addClass('selectedclass');
+            });
+            });
+
+
+        // $(function(){
+        //     $('.nav-pills button').click(function(){
+        //         $('.nav-pills button').each(function(button){
+        //             $(this).removeClass('selectedClass2')
+        //         });
+        //         $(this).addClass('selectedClass2');
+        //     });
+        // });
+    </script>
+</body>
+</html>
