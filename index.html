@@ -36,7 +36,7 @@
         .about-me p{
             margin-top: 50px;
             font-size: 20px;
-            
+            text-align: justify;
             
         }  
         .about-me span{
@@ -89,11 +89,11 @@
         .experience{
             /* color: cornsilk; */
             color: rgb(185, 196, 248);
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             
         }
         .experience .ex-column{
-            border-left: 1px solid rgb(185, 196, 248);
+            /* border-left: 1px solid rgb(185, 196, 248); */
         }
         .experience .ex-column button{            
             background-color: #ddd;
@@ -105,11 +105,12 @@
             display: inline-block;
             margin: 4px 2px;
             cursor: pointer;
-            border-radius: 50px;
+            border-radius: 10px;
         }
         .about-me2{
             color: rgb(185, 196, 248);
             margin-bottom: 40px;
+            text-align: justify;
         }
         .about-me2 hr{
             margin-bottom: 30px;
@@ -128,16 +129,25 @@
         .experience h6 span{
             color: cyan;
         }
+        .experience .tab-content{
+          max-height: 150px;
+        }
         .nav-item a.selectedclass
         {
             color: cyan;
             /* background-color:blue; */
         }
+        .nav-item a span{
+            color: cyan;
+        }
         .nav-pills button .selectedClass2{
             color: cyan;
         }
         .projects{
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+        }
+        .projects hr{
+            color: cornsilk;
         }
         .projects h5{
             color: cornsilk;
@@ -155,6 +165,43 @@
             font-size: 17px;
             text-align: justify;
         }
+
+        .contact{
+            margin-bottom: 300px;
+            color: rgb(185, 196, 248); 
+        }
+        .contact h5{
+            color: cornsilk;
+            font-size: 20px;            
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+        
+        .contact a{
+            text-decoration: none;
+            color: cornsilk;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid cyan;
+
+            border-radius: 5%;
+        }
+        .contact a:hover{
+            
+            background-color: cyan;
+            transition: 0.7s;
+        }
+        .footer p{
+            color: rgb(185, 196, 248); 
+
+        }
+
+        .footer p span{
+           color: cyan;
+
+        }
+        
     </style>
 </head>
 <body>
@@ -169,16 +216,16 @@
                             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a href="#about-me" class="nav-link">01. About</a>
+                                        <a href="#about-me" class="nav-link"><span>01.</span> About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#experience" class="nav-link">02. Experience</a>
+                                        <a href="#experience" class="nav-link"><span>02.</span> Experience</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#projects" class="nav-link">03. My Projects</a>
+                                        <a href="#projects" class="nav-link"><span>03.</span> My Projects</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#"  class="nav-link">04. Contact</a>
+                                        <a href="#contact"  class="nav-link"><span>04.</span> Contact</a>
                                     </li>
                                 </ul>  
                             </div>  
@@ -228,8 +275,9 @@
             </div>
         </div>
         
-        <div class="row d-flex about-me2 justify-content-center" id="about-me">                
-            <div class="col-7">
+        <div class="row d-flex about-me2 justify-content-center" id="about-me">  
+                      
+            <div class="col-8">
                 <h5>ABOUT ME</h5>
                 <hr>
                 <p>Hello, My name is Paxton Munthali. I Love it that i am a Computer Engineer, 
@@ -261,19 +309,19 @@
         </div>
         <!-- Experience -->
            <div class="row d-flex experience justify-content-center" id="experience">                
-                <div class="col-7">
+                <div class="col-8">
                     <h5>EXPERIENCE</h5>
                     <hr>
                     <div class="d-flex align-items-start ex-column">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Self</button>
-                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">GCSL</button>
-                          <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">GIL</button>
-                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">TNM PLC</button>
+                          <a class="nav-link active" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-self" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Self</a>
+                          <a class="nav-link" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-gcsl" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">GCSL</a>
+                          <a class="nav-link" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-gil" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">GIL</a>
+                          <a class="nav-link" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-tnm" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">TNM PLC</a>
 
                         </div>
                         <div class="tab-content" id="v-pills-tabContent">
-                          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                          <div class="tab-pane fade show active" id="v-pills-self" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
                             <h6>Software Developer<span>@Self Employed</span></h6>
                             <p>2017 - present</p>
                             <ul>
@@ -282,17 +330,17 @@
                                 <li>desktop application development</li>
                             </ul>
                           </div>
-                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                          <div class="tab-pane fade" id="v-pills-gcsl" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                             <h6>Software Implementor <span>@Globe Computer Systems Limited</span></h6>
                             <p>From July, 2021 - September, 2022</p>
                             <ul>
                                 <li>Implemented Enterprise softwares like Payroll, Accounting <br>and Point of Sale on various Machines</li>
-                                <li>Trained users</li>
-                                <li>Provided support</li>
+                                <li>User Training and Support</li>
+                                
                             </ul>
                           </div>
-                          <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
-                            <h6>Assistant Technician<span>@Globe Internet Limited</span></h6>
+                          <div class="tab-pane fade" id="v-pills-gil" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                            <h6>Technical Assistant<span>@Globe Internet Limited</span></h6>
                             <p>From November, 2019 - July, 2021</p>
                             <ul>
                                 <li>Did cabling, Terminated Ethernet cable  and Splicing Fiber cable</li>
@@ -301,7 +349,7 @@
                                 <li>Connected homes to internet</li>
                             </ul>
                           </div>
-                          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                          <div class="tab-pane fade" id="v-pills-tnm" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
                             <h6>Network Engineer Intern<span>@TNM PLC</span></h6>
                             <p>From May, 2017- July, 2017</p>
                             <ul>
@@ -317,8 +365,9 @@
            </div>
            <!-- Projects -->
            <div class="row d-flex projects justify-content-center" id="projects">                
-                <div class="col-7">
+                <div class="col-8">
                     <h5>PROJECTS</h5>
+                    <hr>
                         <div class="row eachProject">
                             <div class="col">
                                 <h5>USB Detector App</h5>
@@ -370,6 +419,26 @@
                         </div>                        
                   </div>
                     
+                </div>
+            </div>
+
+            <!-- contact -->
+            <div class="row d-flex contact justify-content-center" id="contact">                
+                <div class="col-8">
+                    <h5>GET IN TOUCH</h5>
+                    <hr>
+                    <p>Whenever you want to talk, my inbox is always open.</p>
+                    <p>Whether you have questions or anything, i will make sure that i get back to you, Thanks.</p>
+
+                    <a href="mailto:paxmunthalijnr@gmail.com" type="button"><i class="contact-btn"></i>Contact</a>
+                </div>
+            </div>
+
+            <div class="row d-flex footer justify-content-center" id="footer">                
+                <div class="col-7 d-flex justify-content-center">
+                    <hr>
+                    <p>Designed by <span>Paxton Munthali</span></p>
+                    <hr>
                 </div>
             </div>
 
