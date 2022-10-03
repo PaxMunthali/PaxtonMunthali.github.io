@@ -145,25 +145,29 @@
         }
         .projects{
             margin-bottom: 50px;
+            display: flex;
         }
         .projects hr{
             color: cornsilk;
         }
         .projects h5{
             color: cornsilk;
+            padding: 10px;
         }
 
-        .projects .eachProject .col{
-            height: 300px;
-            /* width: 10px; */
+        .projects .col{
+            height: 310px;
+            width: 270px;
             margin: 10px;
             background-color: rgb(27, 39, 70);
+            float: left;
         }
 
-        .projects .eachProject .col p{
+        .projects .col p{
             color: rgb(185, 196, 248);
             font-size: 17px;
             text-align: justify;
+            padding: 10px;
         }
 
         .contact{
@@ -172,7 +176,8 @@
         }
         .contact h5{
             color: cornsilk;
-            font-size: 20px;            
+            font-size: 20px;   
+                     
             /* display: flex;
             align-items: center;
             justify-content: center; */
@@ -194,15 +199,46 @@
         }
         .footer p{
             color: rgb(185, 196, 248); 
-
         }
-
         .footer p span{
            color: cyan;
 
         }
-        
+        @media only screen and (max-width: 650px) {
+            .experience .ex-column{
+                height: 300px; 
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            .experience .ex-column{
+                height: 400px; 
+            }
+        }
+
+        @media only screen and (max-width: 350px) {
+            .projects .col{
+                width: 100%;
+                height: 400px;                
+                
+            }
+            .experience .ex-column{
+                height: 400px; 
+            }
+            
+        }
+        @media only screen and (max-width: 315px) {
+            .projects .col{               
+                height: 450px;                
+            }
+            
+        }
+        @media only screen and (max-width: 277px) {
+            .projects .col{                
+                height: 470px;                
+            }
+        }        
     </style>
+
 </head>
 <body>
     <div class="container-fluid mt-2">
@@ -368,8 +404,8 @@
                 <div class="col-8">
                     <h5>PROJECTS</h5>
                     <hr>
-                        <div class="row eachProject">
-                            <div class="col">
+                        <!-- <div class="row eachProject"> -->
+                            <div class="col ">
                                 <h5>USB Detector App</h5>
 
                                 <P>This is an App that detects any usb connected to a 
@@ -390,8 +426,8 @@
 
                                 <p>Used PHP, HTML, Javascript CSS, bootstrap and MySQL DB for development</p>
                             </div>                        
-                      </div>
-                      <div class="row eachProject">
+                      <!-- </div>
+                      <div class="row eachProject"> -->
                         <div class="col">
                             <h5>EMAS System</h5>
 
@@ -417,7 +453,7 @@
                                 <p>Used C# and Kinect v2 sensors for development</p>
                             
                         </div>                        
-                  </div>
+                  <!-- </div> -->
                     
                 </div>
             </div>
