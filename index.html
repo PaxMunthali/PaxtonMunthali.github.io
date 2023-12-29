@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="css/fontAwesome/css/all.css">
     <style>
         body{
-            background-color: rgb(19, 21, 51);
+            /* background-color: rgb(19, 21, 51); */
             font-size: 20px;
+
+            background-image: url(imgs/bg1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;           
+            
             
         }
         .navbar-brand{            
@@ -87,14 +92,20 @@
             
         }
         .experience{
-            /* color: cornsilk; */
+            
             color: rgb(185, 196, 248);
             margin-bottom: 50px;
+            padding-top: 30px;
+            background: linear-gradient(rgba(49, 44, 44, 0.9), rgba(3, 21, 83, 0.9)),url(imgs/bg2.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 350px;
+            background-position: center;    
             
         }
-        .experience .ex-column{
-            /* border-left: 1px solid rgb(185, 196, 248); */
-        }
+        /*.experience .ex-column{
+             border-left: 1px solid rgb(185, 196, 248); 
+        }*/
         .experience .ex-column button{            
             background-color: #ddd;
             border: none;
@@ -188,9 +199,10 @@
             color: cornsilk;
             padding-left: 10px;
             padding-right: 10px;
-            border: 1px solid cyan;
+            padding-bottom: 5px;
+            border: 2px solid cyan;
 
-            border-radius: 5%;
+            border-radius: 0%;
         }
         .contact a:hover{
             
@@ -236,14 +248,73 @@
             .projects .col{                
                 height: 470px;                
             }
-        }        
+        }  
+        .about-me{
+            
+            /* background-image: url(imgs/bg1.jpg); */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/bg1.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-position: center;
+            margin-bottom: 0px;
+        }
+        .about-me p::first-line {
+            background: rgba(0, 0, 0, 0.6);
+        }
+       
+        .contact{
+          
+            margin-bottom: 0px;
+            padding-top: 30px;
+            background: linear-gradient(rgba(49, 44, 44, 0.9), rgba(3, 21, 83, 0.9)),url(imgs/bg4.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 350px;
+            background-position: center;    
+        }
+
+        .about-me2{
+          
+          margin-bottom: 0px;
+          padding-top: 30px;
+          /* background: linear-gradient(rgba(66, 56, 56, 0.9), rgba(63, 43, 43, 0.9)); */
+          background: linear-gradient(rgba(0, 0, 0,  0.8), rgba(0, 0, 0, 0.8));
+          /* background: linear-gradient(rgba(49, 44, 44, 0.5), rgba(3, 21, 83, 0.5)),url(imgs/bg4.jpg); */
+          background-size:cover;
+          background-repeat: no-repeat;
+          height: 550px;
+          background-position: center;    
+      }
+        .footer{
+            padding-top: 20px;
+            background: linear-gradient(rgba(49, 44, 44, 0.5), rgba(3, 21, 83, 0.5)),url(imgs/bg4.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 80px;
+            background-position: center;    
+        }
+       /* .experience{
+            background: linear-gradient(rgba(49, 44, 44, 0.9), rgba(3, 21, 83, 0.9)),url(imgs/bg2.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 350px;
+            background-position: center;       
+           
+        }
+         .bg-class{
+            background-image: url(imgs/bg1.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+        }       */
     </style>
 
 </head>
 <body>
-    <div class="container-fluid mt-2">
-        <div class="row">            
-                <nav class="navbar navbar-expand-sm navbar-dark  ">  
+    <div class="container-fluid bg-class mt-2">
+      <!-- <div class="bg-class">   -->
+          <div class="row">            
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">  
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#">Logo</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -280,6 +351,7 @@
                     
                     <a href="documents/Paxton Munthali CV.pdf" type="button"><i class="fas fa-download"></i> Download CV</a>
             </div>
+        <!-- </div> -->
         </div>
         <!-- Links -->
         <div class="row d-flex myLinks justify-content-center">
@@ -350,10 +422,10 @@
                     <hr>
                     <div class="d-flex align-items-start ex-column">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <a class="nav-link active" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-self" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Self</a>
-                          <a class="nav-link" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-gcsl" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">GCSL</a>
-                          <a class="nav-link" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-gil" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">GIL</a>
-                          <a class="nav-link" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-tnm" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">TNM PLC</a>
+                          <a class="nav-link btn btn-secondary active" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-self" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Self</a>
+                          <a class="nav-link btn btn-secondary" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-gcsl" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">GCSL</a>
+                          <a class="nav-link btn btn-secondary" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-gil" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">GIL</a>
+                          <a class="nav-link btn btn-secondary" id="#" data-bs-toggle="pill" data-bs-target="#v-pills-tnm" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">TNM PLC</a>
 
                         </div>
                         <div class="tab-content" id="v-pills-tabContent">
